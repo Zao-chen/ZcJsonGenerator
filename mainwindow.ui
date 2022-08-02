@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1502</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>1891</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_text">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>文本</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_text">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>371</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_text">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>30</y>
+       <width>111</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>追加</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_selector">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>180</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>追加</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_selector">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>230</y>
+       <width>371</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_selector">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>154</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>选择器</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_score">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>310</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>追加</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_score">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>284</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>分数</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_score_name">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>360</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>32765</number>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_score_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>板名</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_score_3">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>330</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>目标</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_score_sc">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>360</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>32765</number>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_score_vaule">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>360</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>32765</number>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_score_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>320</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>vaule（可选）</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_selector_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>填入选择器</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_text_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>输入文本</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_tr">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>10</y>
+       <width>72</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>翻译字符</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_tr_2">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>30</y>
+       <width>491</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>主文本(%%1、%%2……为替换文本的第几个值，%%s是全部值）（可以使用转义）</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_tr">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>70</y>
+       <width>371</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_tr_3">
+     <property name="geometry">
+      <rect>
+       <x>1170</x>
+       <y>80</y>
+       <width>141</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>追加</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_tr_2">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>150</y>
+       <width>371</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_tr_3">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>110</y>
+       <width>331</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>替换文本（格式：&quot;值a&quot;,&quot;值b&quot;，需要双引号）</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_tr_4">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>200</y>
+       <width>371</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>tips:替换会替换掉主文本的%%1、%%2
+例如我替换文本填了&quot;a&quot;,&quot;b&quot;
+那么在指令执行的时候主文本的 %%1 %%2
+就会分别替换为a与b</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_quick">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>300</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>常用转义</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_n">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>350</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>换行（追加）</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>1861</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <widget class="QPlainTextEdit" name="plainTextEdit_main">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>219</y>
+       <width>601</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_appearance3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>131</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>完整内容</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_appearance2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>预览</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_appearance">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>-6</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>元素</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="plainTextEdit_preview">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>601</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTreeWidget" name="treeWidget_contact">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>30</y>
+       <width>811</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>预览</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>详情</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清空</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_reload">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>320</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>刷新</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_copy">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>320</y>
+       <width>171</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>一键复制</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_back">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>320</y>
+       <width>201</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除最后一个（退格）</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_del">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>320</y>
+       <width>211</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除选中</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_add">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>320</y>
+       <width>241</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>在 选中元素 前插入 元素</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_edit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>340</y>
+       <width>241</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>修改 选中元素</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_last">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>360</y>
+       <width>241</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>追加元素（默认）</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>940</y>
+      <width>371</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0.1(beta-20220731)         Made by 早晨 with &lt;3 and bug</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>350</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
