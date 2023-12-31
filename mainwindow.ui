@@ -6,695 +6,152 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1652</width>
-    <height>1000</height>
+    <width>1201</width>
+    <height>774</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+    background-color: #FFFEF9;
+}
+
+QMenuBar {
+    background-color: #FFFCF3;
+}
+
+QMenu {
+    background-color: #FFFCF3;
+}
+
+QMenu::item {
+    padding: 5px 20px;
+    background-color: transparent;
+}
+
+QMenu::item:selected {
+    background-color: #f8b156;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #f7931e;
+    margin: 5px 0px 5px 0px;
+}
+
+QMenuBar::item {
+    padding: 5px 20px;
+    background-color: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #f8b156;
+}
+
+QMenuBar::item:pressed {
+    background-color: #DAA520;
+}
+
+
+QLineEdit {
+    border: 2px solid #f7931e;
+    border-radius: 3px;
+    background-color: #FFFCF3;
+    padding: 2px;
+    font-size: 16px;
+}
+
+
+QTextEdit {
+    border: 2px solid #f7931e;
+    border-radius: 3px;;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #FFFCF3;
+}
+
+QTableView {
+    background-color: #FFFCF3;
+}
+
+QPushButton {
+    background-color: #FFBC33;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    padding: 2px 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f8b156;
+}
+
+QPushButton:pressed {
+    background-color: 	#DAA520;
+}
+
+
+QComboBox {
+    border: none;
+    background-color: #FFBC33;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    selection-background-color: #f8b156; /* 选中项背景色 */
+    selection-color: #ffffff; /* 选中项前景色 */
+}
+
+QComboBox:hover {
+    background-color: #f8b156;
+}
+
+QComboBox::drop-down {
+    width: 0; /* 去掉下拉箭头 */
+}
+
+QCheckBox {
+    color: #FFBC33;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+QCheckBox::indicator::unchecked {
+    border: 2px solid #FFBC33;
+    background-color: #FFFEF9;
+}
+
+QCheckBox::indicator::unchecked:hover {
+    border: 2px solid #f8b156;
+}
+
+QCheckBox::indicator::checked {
+    border: 2px solid #FFBC33;
+    background-color: #FFBC33;
+}
+
+QCheckBox::indicator::checked:hover {
+    background-color: #f8b156;
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>410</y>
-      <width>1891</width>
-      <height>461</height>
-     </rect>
-    </property>
-    <widget class="QLabel" name="label_text">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>81</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>文本</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_text">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>80</y>
-       <width>371</width>
-       <height>51</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_text">
-     <property name="geometry">
-      <rect>
-       <x>400</x>
-       <y>30</y>
-       <width>111</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>追加</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_selector">
-     <property name="geometry">
-      <rect>
-       <x>400</x>
-       <y>180</y>
-       <width>111</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>追加</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_selector">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>220</y>
-       <width>371</width>
-       <height>51</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_selector">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>154</y>
-       <width>101</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>选择器</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_score">
-     <property name="geometry">
-      <rect>
-       <x>400</x>
-       <y>310</y>
-       <width>111</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>追加</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_score">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>284</y>
-       <width>91</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>分数</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_score_name">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>350</y>
-       <width>151</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="maxLength">
-      <number>32765</number>
-     </property>
-     <property name="placeholderText">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_score_2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>320</y>
-       <width>101</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>板名</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_score_3">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>330</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>目标</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_score_sc">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>350</y>
-       <width>111</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="maxLength">
-      <number>32765</number>
-     </property>
-     <property name="placeholderText">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_score_vaule">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>360</y>
-       <width>81</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <strikeout>false</strikeout>
-      </font>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="maxLength">
-      <number>32765</number>
-     </property>
-     <property name="placeholderText">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_score_4">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>320</y>
-       <width>101</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>vaule（可选）</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_selector_2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>190</y>
-       <width>91</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>填入选择器</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_text_2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>50</y>
-       <width>121</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>输入文本</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_tr">
-     <property name="geometry">
-      <rect>
-       <x>780</x>
-       <y>10</y>
-       <width>72</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>翻译字符</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_tr_2">
-     <property name="geometry">
-      <rect>
-       <x>790</x>
-       <y>30</y>
-       <width>491</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>主文本(%%1、%%2……为替换文本的第几个值，%%s是全部值）（可以使用转义）</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_tr">
-     <property name="geometry">
-      <rect>
-       <x>790</x>
-       <y>70</y>
-       <width>371</width>
-       <height>51</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_tr_3">
-     <property name="geometry">
-      <rect>
-       <x>1170</x>
-       <y>80</y>
-       <width>141</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>追加</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_tr_2">
-     <property name="geometry">
-      <rect>
-       <x>790</x>
-       <y>160</y>
-       <width>371</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_tr_3">
-     <property name="geometry">
-      <rect>
-       <x>790</x>
-       <y>120</y>
-       <width>331</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>替换文本（格式：&quot;值a&quot;,&quot;值b&quot;，需要双引号）</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_tr_4">
-     <property name="geometry">
-      <rect>
-       <x>790</x>
-       <y>220</y>
-       <width>371</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>7</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>tips:替换会替换掉主文本的%%1、%%2
-例如我替换文本填了&quot;a&quot;,&quot;b&quot;
-那么在指令执行的时候主文本的 %%1 %%2
-就会分别替换为a与b</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_quick">
-     <property name="geometry">
-      <rect>
-       <x>780</x>
-       <y>300</y>
-       <width>91</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>常用转义</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_n">
-     <property name="geometry">
-      <rect>
-       <x>800</x>
-       <y>350</y>
-       <width>161</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>换行（追加）</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widget_2" native="true">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>1861</width>
-      <height>401</height>
-     </rect>
-    </property>
-    <widget class="QPlainTextEdit" name="plainTextEdit_main">
-     <property name="geometry">
-      <rect>
-       <x>11</x>
-       <y>219</y>
-       <width>601</width>
-       <height>91</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_appearance3">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>150</y>
-       <width>131</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>完整内容</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_appearance2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>预览</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_appearance">
-     <property name="geometry">
-      <rect>
-       <x>630</x>
-       <y>-6</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>元素</string>
-     </property>
-    </widget>
-    <widget class="QPlainTextEdit" name="plainTextEdit_preview">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>601</width>
-       <height>91</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTreeWidget" name="treeWidget_contact">
-     <property name="geometry">
-      <rect>
-       <x>630</x>
-       <y>30</y>
-       <width>811</width>
-       <height>281</height>
-      </rect>
-     </property>
-     <column>
-      <property name="text">
-       <string>预览</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>类型</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>详情</string>
-      </property>
-     </column>
-    </widget>
-    <widget class="QPushButton" name="pushButton_clear">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>320</y>
-       <width>101</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>清空</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_reload">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>320</y>
-       <width>101</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>刷新</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_copy">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>320</y>
-       <width>171</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>一键复制</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_back">
-     <property name="geometry">
-      <rect>
-       <x>410</x>
-       <y>320</y>
-       <width>201</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>删除最后一个（退格）</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_del">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>630</x>
-       <y>320</y>
-       <width>211</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>删除选中</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_add">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>1000</x>
-       <y>320</y>
-       <width>241</width>
-       <height>19</height>
-      </rect>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>在 选中元素 前插入 元素</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_edit">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>1000</x>
-       <y>340</y>
-       <width>241</width>
-       <height>19</height>
-      </rect>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>修改 选中元素</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_last">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>1000</x>
-       <y>360</y>
-       <width>241</width>
-       <height>19</height>
-      </rect>
-     </property>
-     <property name="baseSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="tabletTracking">
-      <bool>false</bool>
-     </property>
-     <property name="text">
-      <string>追加元素（默认）</string>
-     </property>
-     <property name="checked">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>880</y>
-      <width>371</width>
-      <height>20</height>
+      <x>930</x>
+      <y>740</y>
+      <width>251</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="font">
@@ -703,23 +160,744 @@
      </font>
     </property>
     <property name="text">
-     <string>0.1(beta-20220731)         Made by 早晨 with &lt;3 and bug</string>
+     <string>0.1.1(beta-20231221)         Made by 早晨 with &lt;3 and bug</string>
     </property>
    </widget>
-   <widget class="QWidget" name="widget_3" native="true">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>350</y>
-      <width>120</width>
-      <height>80</height>
+      <x>10</x>
+      <y>0</y>
+      <width>1171</width>
+      <height>421</height>
      </rect>
     </property>
+    <property name="title">
+     <string>总览编辑</string>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>1134</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_appearance2">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>预览(&amp;Y)</string>
+          </property>
+          <property name="buddy">
+           <cstring>plainTextEdit_preview</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit_preview">
+          <property name="minimumSize">
+           <size>
+            <width>545</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_appearance3">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>完整内容(W)</string>
+          </property>
+          <property name="buddy">
+           <cstring>plainTextEdit_main</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit_main"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_clear">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>清空</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_reload">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>刷新</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_copy">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>一键复制</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_back">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>删除最后一个（退格）</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_appearance">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>元素(E)</string>
+          </property>
+          <property name="buddy">
+           <cstring>treeWidget_contact</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTreeWidget" name="treeWidget_contact">
+          <property name="minimumSize">
+           <size>
+            <width>545</width>
+            <height>200</height>
+           </size>
+          </property>
+          <column>
+           <property name="text">
+            <string>预览</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>类型</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>详情</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_del">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>90</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>删除选中</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QRadioButton" name="radioButton_add">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>在 选中元素 前插入 元素</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioButton_edit">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>修改 选中元素</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioButton_last">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="tabletTracking">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>追加元素（默认）</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>1171</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>元素添加</string>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>1131</width>
+       <height>288</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_text">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>文本(&amp;W)</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_text</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_text">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_text">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>追加</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_selector">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>选择器(&amp;X)</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_selector</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_selector">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_selector">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>追加</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_score">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>分数(&amp;S)</string>
+          </property>
+          <property name="buddy">
+           <cstring>lineEdit_score_name</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_score_name">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>32765</number>
+            </property>
+            <property name="placeholderText">
+             <string>输入分数……</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_score_sc">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>32765</number>
+            </property>
+            <property name="placeholderText">
+             <string>输入目标……</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_score_vaule">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>32765</number>
+            </property>
+            <property name="placeholderText">
+             <string>输入vaule…（可选）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_score">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>追加</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_tr">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>翻译字符(&amp;F)</string>
+              </property>
+              <property name="buddy">
+               <cstring>lineEdit_tr</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_tr_2">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>主文本(%%1、%%2……为替换文本的第几个值，%%s是全部值）（可以使用转义）</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_tr">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_tr_3">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>替换文本（格式：&quot;值a&quot;,&quot;值b&quot;，需要双引号）</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_tr_2">
+              <property name="minimumSize">
+               <size>
+                <width>456</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_tr_3">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>105</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>追加</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_tr_4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>7</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>tips:替换会替换掉主文本的%%1、%%2
+例如我替换文本填了&quot;a&quot;,&quot;b&quot;
+那么在指令执行的时候主文本的 %%1 %%2
+就会分别替换为a与b</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_quick">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>常用转义(C)</string>
+          </property>
+          <property name="buddy">
+           <cstring>pushButton_n</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_n">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>换行（追加）</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>plainTextEdit_preview</tabstop>
+  <tabstop>plainTextEdit_main</tabstop>
+  <tabstop>pushButton_clear</tabstop>
+  <tabstop>pushButton_reload</tabstop>
+  <tabstop>pushButton_copy</tabstop>
+  <tabstop>pushButton_back</tabstop>
+  <tabstop>treeWidget_contact</tabstop>
+  <tabstop>pushButton_del</tabstop>
+  <tabstop>radioButton_add</tabstop>
+  <tabstop>radioButton_edit</tabstop>
+  <tabstop>radioButton_last</tabstop>
+  <tabstop>lineEdit_text</tabstop>
+  <tabstop>pushButton_text</tabstop>
+  <tabstop>lineEdit_selector</tabstop>
+  <tabstop>pushButton_selector</tabstop>
+  <tabstop>lineEdit_score_name</tabstop>
+  <tabstop>lineEdit_score_sc</tabstop>
+  <tabstop>lineEdit_score_vaule</tabstop>
+  <tabstop>pushButton_score</tabstop>
+  <tabstop>lineEdit_tr</tabstop>
+  <tabstop>lineEdit_tr_2</tabstop>
+  <tabstop>pushButton_tr_3</tabstop>
+  <tabstop>pushButton_n</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
